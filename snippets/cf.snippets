@@ -9,6 +9,12 @@ snippet func
 	/**
 	* ${5:hint}
 	*/
-	${1:public} ${2:void} function (${3:args}) output="${4:false}" {
+	${1:public} ${2:void} function ${4:functionName} (${3}) output="${4:false}" {
 		${6}
 	}
+snippet trans
+	transaction nested="${1:true}" {
+		${2}
+	}
+snippet rollback
+	transaction action="rollback";
