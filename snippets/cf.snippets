@@ -22,7 +22,7 @@ snippet trans
 snippet rollback
 	transaction action="rollback";
 snippet query
-	$1{local.queryService} = new Query(datasource = ${2:variables.dsn});
+	${1:local.queryService} = new Query(datasource = ${2:variables.dsn});
 # Tag based snippets
 snippet cfarg
 	<cfargument
