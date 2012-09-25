@@ -24,7 +24,7 @@ snippet rollback
 snippet query
 	${1:local.queryService} = new Query(datasource = ${2:variables.dsn});
 snippet qparam
-	${1:local.queryService}.addParam(name="${2:paramName"}, value="${3:local.value}", cfsqltype="cf_sql_${4:varchar}");
+	${1:local.queryService}.addParam(name="${2:paramName}", value=${3:local.value}, cfsqltype="cf_sql_${4:varchar}");
 # Tag based snippets
 snippet cfarg
 	<cfargument
