@@ -18,4 +18,10 @@ snippet trans
 	}
 snippet rollback
 	transaction action="rollback";
-
+# Tag based snippets
+snippet cfarg
+	<cfargument
+		name="${1:varName}"
+		type="${2:string}"
+		required="${3:true}"
+		hint="${4}" />
