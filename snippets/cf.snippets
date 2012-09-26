@@ -48,6 +48,8 @@ snippet cfcomp
 	<cfcomponent extends="${1}" output="${2:false"} hint="${3}" accessors="${4:true">
 		${5}
 	</cfcomponent>
+snippet cfprop
+	<cfproperty name="${1}" type="${2:string}" hint="${3}" setter="${4:true}" getter="${5:true}" />
 snippet cffunc
 	<cffunction 
 		access="${1:public}" 
