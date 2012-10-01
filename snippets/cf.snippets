@@ -25,6 +25,10 @@ snippet query
 	${1:local.queryService} = new Query(datasource = ${2:variables.dsn});
 snippet qparam
 	${1:local.queryService}.addParam(name="${2:paramName}", value=${3:local.value}, cfsqltype="cf_sql_${4:varchar}");
+snippet queryAddRow
+	queryAddRow(${1:queryObj});${2}
+snippet querySetCell
+	querySetCell(${1:queryObj}, ${2:cellName}, ${3:cellValue}${4:, rowNum});${5}
 snippet if
 	if (${1:condition}) {
 		${2}
